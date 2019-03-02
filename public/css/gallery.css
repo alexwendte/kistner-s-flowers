@@ -3,6 +3,11 @@ body {
   background: #F2EBD0;
 }
 
+a {
+  color: #83052B;
+  font-weight: bold;
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -99,9 +104,20 @@ body {
   }
 }
 
+.what {
+  padding: 4rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.what p,
+.what a {
+  font-size: 2rem;
+}
+
 .company_info {
   background: #83052B;
-  padding: 4rem;
+  padding: 0 4rem 4rem;
   box-shadow: rgba(69, 50, 93, 0.11) 0px 4px 6px, rgba(0, 0, 0, 0.08) 0px 1px 3px;
 }
 
@@ -119,4 +135,13 @@ body {
 .text__company_info {
   max-width: 70rem;
   padding-left: 3.2rem;
+}
+
+.sub_heading {
+  text-align: center;
+  padding: 3.6rem 1.8rem 2.4rem;
+}
+
+.white {
+  color: white;
 }

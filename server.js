@@ -58,8 +58,8 @@ const serveIndex = (req, res) => {
   res.setHeader('Content-Type', 'text/html')
   res.end(
     `
-      <!doctype html>
-      <html>
+      <!DOCTYPE html>
+      <html lang="en">
         <head>
           <title>Gallery</title>
           <link href="reset.css" type="text/css" rel="stylesheet">
@@ -83,7 +83,12 @@ const serveIndex = (req, res) => {
           <main id="thumbnails">
             ${generateCards()} 
           </main>
+          <section class="what">
+          <h2 class="sub_heading">We Specialize in Weddings and Funerals</h2>
+          <p>Please feel free to contact one of our event specialists: <a href="tel:1-785-776-7989">(785) 776-7989</a> </p>
+          </section>
           <section class="company_info">
+          <h2 class="sub_heading white">About The Company</h2>
           <div class="wrapper__company_info">
           <img src="owner-picture.jpg" alt="the owners of Kristner's Flowers"  class="img__company_info"/>
           <div class="text__company_info">
